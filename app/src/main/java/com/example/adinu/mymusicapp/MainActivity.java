@@ -13,19 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.miwok;
+package com.example.adinu.mymusicapp;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
-
-import com.example.adinu.mymusicapp.NowPlayingActivity;
-import com.example.adinu.mymusicapp.PlaylistActivity;
-import com.example.adinu.mymusicapp.R;
-import com.example.adinu.mymusicapp.SearchActivity;
-import com.example.adinu.mymusicapp.StoreActivity;
 
 public class MainActivity extends AppCompatActivity {
 
