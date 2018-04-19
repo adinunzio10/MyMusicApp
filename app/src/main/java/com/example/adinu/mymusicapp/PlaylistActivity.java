@@ -4,9 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
-import com.example.adinu.mymusicapp.R;
-import com.example.adinu.mymusicapp.Word;
-import com.example.adinu.mymusicapp.WordAdapter;
 
 import java.util.ArrayList;
 
@@ -45,5 +42,8 @@ public class PlaylistActivity extends AppCompatActivity {
         // Do this by calling the setAdapter method on the {@link ListView} object and pass in
         // 1 argument, which is the {@link ArrayAdapter} with the variable name itemsAdapter.
         listView.setAdapter(adapter);
+
     }
+
+
 }

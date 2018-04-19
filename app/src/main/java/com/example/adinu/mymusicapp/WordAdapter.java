@@ -18,7 +18,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
     private static final String LOG_TAG = WordAdapter.class.getSimpleName();
 
     // Create internal storage for array adapter.
-    public WordAdapter(Activity context, ArrayList<Word> words) {
+    private WordAdapter(Activity context, ArrayList<Word> words) {
         super(context, 0, words);
     }
 
@@ -32,7 +32,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         }
 
         Word mArtist = getItem(position);
-        TextView artistView = (TextView) listItemView.findViewById(R.id.artiest_text_view);
+        TextView artistView = (TextView) listItemView.findViewById(R.id.artist_text_view);
         artistView.setText(mArtist.getArtistName());
 
         Word mSong = getItem(position);
