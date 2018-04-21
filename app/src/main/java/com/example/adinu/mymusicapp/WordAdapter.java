@@ -7,7 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import java.util.ArrayList;
 
@@ -18,7 +20,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
     private static final String LOG_TAG = WordAdapter.class.getSimpleName();
 
     // Create internal storage for array adapter.
-    private WordAdapter(Activity context, ArrayList<Word> words) {
+    public WordAdapter(Activity context, ArrayList<Word> words) {
         super(context, 0, words);
     }
 
@@ -31,13 +33,15 @@ public class WordAdapter extends ArrayAdapter<Word> {
                     R.layout.list_item, parent, false);
         }
 
-        Word mArtist = getItem(position);
+        Word currentWord = getItem(position);
         TextView artistView = (TextView) listItemView.findViewById(R.id.artist_text_view);
-        artistView.setText(mArtist.getArtistName());
+        artistView.setText(currentWord.getArtistName());
 
-        Word mSong = getItem(position);
         TextView songView = (TextView) listItemView.findViewById(R.id.song_text_view);
-        songView.setText(mSong.getSongName());
+        songView.setText(currentWord.getSongName());
+
+        ToggleButton iconView = (ToggleButton) listItemView.findViewById(R.id.list_item_icon);
+        iconView.setBackgroundResource(currentWord.getImageResourceID());
 
         return listItemView;
     }

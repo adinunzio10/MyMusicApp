@@ -26,10 +26,10 @@
     </LinearLayout>
 
     <ToggleButton
-        android:id="@+id/toggleButton"
+        android:id="@+id/list_item_icon"
         style="@style/toggleButton"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_alignParentEnd="true"
-        android:background="@drawable/ic_toggle_bg" />
+        />
 </RelativeLayout>

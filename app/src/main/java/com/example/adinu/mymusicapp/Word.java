@@ -8,18 +8,26 @@ public class Word {
     // Miwok translation of the word
     private String mSongName;
 
-    public Word(String artistName, String songName) {
+    private int mImageResourceId;
+
+    public Word(String artistName, String songName, int imageResourceId) {
         mArtistName = artistName;
         mSongName = songName;
+        mImageResourceId = imageResourceId;
     }
 
-    // Get the English Translation of the word
+    // Get the Artist Name for the song
     public String getArtistName() {
         return mArtistName;
     }
 
-    // Get the Miwok translation of the word
+    // Get the Song Name
     public String getSongName() {
         return mSongName;
+    }
+
+    // Get the icon
+    public int getImageResourceID() {
+        return mImageResourceId;
     }
 }

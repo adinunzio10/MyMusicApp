@@ -16,14 +16,14 @@ public class PlaylistActivity extends AppCompatActivity {
 
         // Create a list of words
         ArrayList<Word> words = new ArrayList<>();
-        words.add(new Word("The Devil Wears Prada","HTML Rulez DOOd"));
-        words.add(new Word("The Devil Wears Prada","Reptar, King Of The Ozone"));
-        words.add(new Word("Avenged Sevenfold","Unholy Confessions"));
-        words.add(new Word("Avenged Sevenfold","Bat Country"));
-        words.add(new Word("Protest The Hero","Divinity Within"));
-        words.add(new Word("Protest The Hero","Sequoia Throne"));
-        words.add(new Word("Chiodos","There's No Penguins in Alaska"));
-        words.add(new Word("Chiodos","The Words 'Best Friend' Become Redefined"));
+        words.add(new Word("The Devil Wears Prada","HTML Rulez DOOd", R.drawable.ic_toggle));
+        words.add(new Word("The Devil Wears Prada","Reptar, King Of The Ozone", R.drawable.ic_toggle));
+        words.add(new Word("Avenged Sevenfold","Unholy Confessions", R.drawable.ic_toggle));
+        words.add(new Word("Avenged Sevenfold","Bat Country", R.drawable.ic_toggle));
+        words.add(new Word("Protest The Hero","Divinity Within", R.drawable.ic_toggle));
+        words.add(new Word("Protest The Hero","Sequoia Throne", R.drawable.ic_toggle));
+        words.add(new Word("Chiodos","There's No Penguins in Alaska", R.drawable.ic_toggle));
+        words.add(new Word("Chiodos","The Words 'Best Friend' Become Redefined", R.drawable.ic_toggle));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
